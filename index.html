@@ -263,7 +263,82 @@ My hobbies include electronic music and sports. I love taking long walks outdoor
                         <p>See my <a href="https://github.com/MrAlexIV">GitHub&gt;</a> for actual details on the following projects. This is also most likely not up to date like most personal websites. </p>
                     </div>
                 </div>
-               
+<style>
+
+.media-scroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+
+
+
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+
+</style>
+               <div class="media-scroller snaps-inline">
+			      <!-- End Highlights Section   <link href="css/style1.css" rel="stylesheet">--> 
+
+  <div class="media-element">
+<a href="https://github.com/MrAlexIV/SatelliteAttitudeControl"> <!-- Specifica l'URL di destinazione -->
+<img src="images/satellite.png"  width="300" 
+     height="300"/>  </a>    <p class="title">Satellite Attitude Control</p>
+  </div>
+  <div class="media-element">
+<a href="https://github.com/MrAlexIV/SmartParking/tree/main"> <!-- Specifica l'URL di destinazione -->
+<img src="images/park.png"  width="300" 
+     height="300"/>  </a>    <p class="title">Smart Parking IoT</p>
+  </div>
+<div class="media-element">
+<a href="https://github.com/MrAlexIV/eregister"> <!-- Specifica l'URL di destinazione -->
+<img src="images/stud.png"  width="300" 
+     height="300"/>  </a>    <p class="title">Electronic Register</p>
+  </div>
+ <div class="media-element">
+<a href="https://github.com/MrAlexIV/pasm"> <!-- Specifica l'URL di destinazione -->
+<img src="images/pasm.png"  width="300" 
+     height="300"/>  </a>    <p class="title">PASM: An Optimization of a business process</p>
+  </div>
+  <div class="media-element">
+    <img src="images/jour.png" width="700"  height="300">
+    <p class="title">An Artificial Intelligence Knowledge Base System for the
+Recognition and Personalized Treatment of SARS-CoV-2</p>
+  </div>
+  
+</div>
+
         </section>
         <!-- End Portfolio Section -->
         <!-- Pictures Section 
