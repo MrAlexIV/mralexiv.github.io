@@ -14,6 +14,43 @@
     <!-- theme css -->
     <link href="css/style.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .project-card {
+            display: block;
+            background-color: #1a1a1a; /* Sfondo scuro per le card */
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden; /* Nasconde le parti dell'immagine che escono */
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px); /* Effetto "sollevamento" */
+            box-shadow: 0 8px 25px rgba(0, 255, 132, 0.15); /* Ombra colorata */
+            color: #fff;
+        }
+
+        .project-card img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover; /* Assicura che l'immagine copra lo spazio senza distorcersi */
+        }
+
+        .project-card .card-body {
+            padding: 1rem;
+        }
+        
+        .project-card .card-title {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+        }
+    </style>
 </head>
 <!-- Body Start -->
 
@@ -297,92 +334,64 @@ My hobbies include electronic music and sports. I love taking long walks outdoor
         </section>
         <!-- End Highlights Section -->
         <!-- Portfolio Section -->
-        <section data-scroll-index="4" class="section work-section border-top-g">
-            <div class="container">
-                <div class="row justify-content-center section-heading">
-                    <div class="col-lg-6 text-center">
-                        <h6><span class="text-theme">Portfolio</span></h6>
-                        <h3>My latest projects</h3>
-                        <p>See my <a href="https://github.com/MrAlexIV">GitHub&gt;</a> for actual details on the following projects. This is also most likely not up to date like most personal websites. </p>
+     <section data-scroll-index="4" class="section work-section border-top-g">
+    <div class="container">
+        <div class="row justify-content-center section-heading">
+            <div class="col-lg-6 text-center">
+                <h6><span class="text-theme">Portfolio</span></h6>
+                <h3>My latest projects</h3>
+                <p>See my <a href="https://github.com/MrAlexIV">GitHub</a> for actual details on the following projects. This is also most likely not up to date like most personal websites.</p>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://github.com/MrAlexIV/SatelliteAttitudeControl" target="_blank" class="project-card">
+                    <img src="images/satellite.png" alt="Satellite Attitude Control">
+                    <div class="card-body">
+                        <h5 class="card-title">Satellite Attitude Control</h5>
                     </div>
-                </div>
-<style>
+                </a>
+            </div>
 
-.media-scroller {
-  --_spacer: var(--size-3);
-  display: grid;
-  gap: var(--_spacer);
-  grid-auto-flow: column;
-  grid-auto-columns: 21%;
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://github.com/MrAlexIV/SmartParking/tree/main" target="_blank" class="project-card">
+                    <img src="images/park.png" alt="Smart Parking IoT">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Parking IoT</h5>
+                    </div>
+                </a>
+            </div>
 
-  padding: 0 var(--_spacer) var(--_spacer);
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://github.com/MrAlexIV/eregister" target="_blank" class="project-card">
+                    <img src="images/stud.png" alt="Electronic Register">
+                    <div class="card-body">
+                        <h5 class="card-title">Electronic Register</h5>
+                    </div>
+                </a>
+            </div>
 
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-}
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://github.com/MrAlexIV/pasm" target="_blank" class="project-card">
+                    <img src="images/pasm.PNG" alt="PASM Business Process Optimization">
+                    <div class="card-body">
+                        <h5 class="card-title">PASM: Business Process Optimization</h5>
+                    </div>
+                </a>
+            </div>
 
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="#" class="project-card"> <img src="images/jour.png" alt="AI Knowledge Base for SARS-CoV-2">
+                    <div class="card-body">
+                        <h5 class="card-title">AI for SARS-CoV-2 Recognition</h5>
+                    </div>
+                </a>
+            </div>
 
-
-
-.media-element {
-  display: grid;
-  grid-template-rows: min-content;
-  gap: var(--_spacer);
-  padding: var(--_spacer);
-  background: var(--surface-2);
-  border-radius: var(--radius-2);
-  box-shadow: var(--shadow-2);
-}
-
-.media-element > img {
-  inline-size: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
-.snaps-inline {
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: var(--_spacer, 1rem);
-}
-
-.snaps-inline > * {
-  scroll-snap-align: start;
-}
-
-
-</style>
-               <div class="media-scroller snaps-inline">
-			      <!-- End Highlights Section   <link href="css/style1.css" rel="stylesheet">--> 
-
-  <div class="media-element">
-<a href="https://github.com/MrAlexIV/SatelliteAttitudeControl"> <!-- Specifica l'URL di destinazione -->
-<img src="images/satellite.png"  width="300" 
-     height="300"/>  </a>    <p class="title">Satellite Attitude Control</p>
-  </div>
-  <div class="media-element">
-<a href="https://github.com/MrAlexIV/SmartParking/tree/main"> <!-- Specifica l'URL di destinazione -->
-<img src="images/park.png"  width="300" 
-     height="300"/>  </a>    <p class="title">Smart Parking IoT</p>
-  </div>
-<div class="media-element">
-<a href="https://github.com/MrAlexIV/eregister"> <!-- Specifica l'URL di destinazione -->
-<img src="images/stud.png"  width="300" 
-     height="300"/>  </a>    <p class="title">Electronic Register</p>
-  </div>
- <div class="media-element">
-<a href="https://github.com/MrAlexIV/pasm"> <!-- Specifica l'URL di destinazione -->
-<img src="images/pasm.PNG"  width="300" 
-     height="300"/>  </a>    <p class="title">PASM: An Optimization of a business process</p>
-  </div>
-  <div class="media-element">
-    <img src="images/jour.png" width="700"  height="300">
-    <p class="title">An Artificial Intelligence Knowledge Base System for the
-Recognition and Personalized Treatment of SARS-CoV-2</p>
-  </div>
-  
-</div>
-
-        </section>
+        </div> </div>
+</section>
         <!-- End Portfolio Section -->
         <!-- Pictures Section 
         <section data-scroll-index="5" class="section work-section border-top-g">
