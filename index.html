@@ -81,8 +81,12 @@
 
 
         /* --- STILI PER TECHNICAL COMPETENCIES --- */
+        /* CORREZIONE: Aggiunto d-flex alla colonna per allineare gli elementi */
+        .services-section .col-lg-4 {
+             display: flex;
+        }
         .services-section .feature-box-01 {
-            /* Rimosso height: 100% per permettere espansione individuale */
+            width: 100%; /* Assicura che il box riempia la colonna */
             display: flex;
             flex-direction: column;
         }
@@ -270,7 +274,7 @@
                     </div>
                 </div>
                 <div class="row gy-4">
-                    <div class="col-sm-6 col-lg-4 d-flex">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-phone"></i></div>
                             <div class="feature-content col">
@@ -279,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 d-flex">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-laptop"></i></div>
                             <div class="feature-content col">
@@ -288,7 +292,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 d-flex">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-triangle"></i></div>
                             <div class="feature-content col">
@@ -297,7 +301,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 d-flex">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-columns"></i></div>
                             <div class="feature-content col">
@@ -306,7 +310,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 d-flex">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-globe2"></i></div>
                             <div class="feature-content col">
@@ -317,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 d-flex">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-distribute-vertical"></i></div>
                             <div class="feature-content col">
@@ -393,13 +397,13 @@
                     <div id="highlightsCarousel" class="carousel slide custom-carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/grad.jpeg" class="d-block w-100" alt="Highlight 1">
+                                <img src="images/grad.jpeg" class="d-block w-100" alt="Graduation photo">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/tml.jpeg" class="d-block w-100" alt="Highlight 2">
+                                <img src="images/tml.jpeg" class="d-block w-100" alt="Tomorrowland photo 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/tml2.jpeg" class="d-block w-100" alt="Highlight 3">
+                                <img src="images/tml2.jpeg" class="d-block w-100" alt="Tomorrowland photo 2">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
@@ -489,7 +493,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 py-2 text-center text-md-end">
-                    <p class="m-0" style="font-size: 0.8rem;">© 2024 copyright totally does not exist and all rights are not reserved</p>
+                    <p class="m-0" style="font-size: 0.8rem;">© 2025 copyright totally does not exist and all rights are not reserved</p>
                 </div>
             </div>
         </div>
@@ -506,7 +510,6 @@
             const expandableParagraphs = document.querySelectorAll('.expandable-text');
 
             expandableParagraphs.forEach(p => {
-                // Controlla se il testo è più lungo dell'altezza visibile del paragrafo
                 if (p.scrollHeight > p.clientHeight) {
                     const btn = document.createElement('button');
                     btn.textContent = 'Read More';
