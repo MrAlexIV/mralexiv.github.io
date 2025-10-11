@@ -47,14 +47,14 @@
             font-size: 1.1rem;
         }
 
-        /* Stili per il carosello delle pubblicazioni */
-        .publications-carousel .carousel-control-prev,
-        .publications-carousel .carousel-control-next {
+        /* Stili per i caroselli */
+        .custom-carousel .carousel-control-prev,
+        .custom-carousel .carousel-control-next {
             width: 5%;
         }
 
-        .publications-carousel .carousel-control-prev-icon,
-        .publications-carousel .carousel-control-next-icon {
+        .custom-carousel .carousel-control-prev-icon,
+        .custom-carousel .carousel-control-next-icon {
             background-color: rgba(0, 255, 132, 0.2);
             border-radius: 50%;
             padding: 15px;
@@ -67,16 +67,28 @@
             border-radius: 8px;
             border: 1px solid #333;
         }
+        
+        /* Stili per il carosello Highlights */
+        .highlights-carousel-container {
+            max-width: 500px; /* Larghezza massima del carosello */
+            margin: auto; /* Centra il carosello */
+        }
+        .highlights-carousel-container img {
+            aspect-ratio: 3 / 4; /* Proporzioni delle immagini */
+            object-fit: cover; /* Evita distorsioni */
+            border-radius: 8px;
+        }
 
-        /* --- NUOVI STILI PER TECHNICAL COMPETENCIES --- */
+
+        /* --- STILI PER TECHNICAL COMPETENCIES --- */
         .services-section .feature-box-01 {
-            height: 100%; /* Fa in modo che tutti i box riempiano l'altezza della riga */
+            /* Rimosso height: 100% per permettere espansione individuale */
             display: flex;
             flex-direction: column;
         }
 
         .services-section .feature-content {
-            flex-grow: 1; /* Permette al contenuto di espandersi */
+            flex-grow: 1; 
             display: flex;
             flex-direction: column;
         }
@@ -86,29 +98,25 @@
         }
 
         .expandable-text {
-            max-height: 150px; /* Altezza massima del testo prima di collassare */
+            max-height: 150px; 
             overflow: hidden;
             position: relative;
             transition: max-height 0.5s ease-in-out;
         }
 
-      
-
         .expandable-text.expanded {
-            max-height: 1000px; /* Un valore alto per mostrare tutto il contenuto */
+            max-height: 1000px; 
         }
-        
-        
 
         .read-more-btn {
             background: none;
             border: none;
-            color: #00ff84; /* Colore tema */
+            color: #00ff84; 
             cursor: pointer;
             padding: 5px 0;
             margin-top: 10px;
             font-weight: bold;
-            align-self: flex-start; /* Allinea il bottone a sinistra */
+            align-self: flex-start;
         }
     </style>
 </head>
@@ -261,8 +269,8 @@
                         <p>With that said, I am confident that I can hold a position that utilizes any of the following competencies and increase my mastery in any of these skills if needed.</p>
                     </div>
                 </div>
-                <div class="row gy-4 align-items-stretch">
-                    <div class="col-sm-6 col-lg-4">
+                <div class="row gy-4">
+                    <div class="col-sm-6 col-lg-4 d-flex">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-phone"></i></div>
                             <div class="feature-content col">
@@ -271,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 d-flex">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-laptop"></i></div>
                             <div class="feature-content col">
@@ -280,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 d-flex">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-triangle"></i></div>
                             <div class="feature-content col">
@@ -289,7 +297,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 d-flex">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-columns"></i></div>
                             <div class="feature-content col">
@@ -298,7 +306,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 d-flex">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-globe2"></i></div>
                             <div class="feature-content col">
@@ -309,7 +317,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4 d-flex">
                         <div class="feature-box-01 media">
                             <div class="icon"><i class="bi bi-distribute-vertical"></i></div>
                             <div class="feature-content col">
@@ -330,7 +338,7 @@
                         <p>Here are some of the scientific and academic contributions I have made so far.</p>
                     </div>
                 </div>
-                <div id="publicationsCarousel" class="carousel slide publications-carousel">
+                <div id="publicationsCarousel" class="carousel slide custom-carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row justify-content-center">
@@ -381,10 +389,28 @@
                         <p>Here are some awards and proofs that I am real.</p>
                     </div>
                 </div>
-                <div class="slide-container">
-                    <img src="images/grad.jpeg" width="400" height="500" />
-                    <img src="images/tml.jpeg" width="400" height="500" />
-                    <img src="images/tml2.jpeg" width="400" height="500" />
+                <div class="highlights-carousel-container">
+                    <div id="highlightsCarousel" class="carousel slide custom-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/grad.jpeg" class="d-block w-100" alt="Highlight 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tml.jpeg" class="d-block w-100" alt="Highlight 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tml2.jpeg" class="d-block w-100" alt="Highlight 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -477,17 +503,15 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Seleziona tutti i paragrafi che possono essere espansi
             const expandableParagraphs = document.querySelectorAll('.expandable-text');
 
             expandableParagraphs.forEach(p => {
-                // Controlla se il contenuto del paragrafo è più alto della sua altezza visibile
+                // Controlla se il testo è più lungo dell'altezza visibile del paragrafo
                 if (p.scrollHeight > p.clientHeight) {
                     const btn = document.createElement('button');
                     btn.textContent = 'Read More';
                     btn.className = 'read-more-btn';
                     
-                    // Inserisce il bottone dopo il paragrafo, all'interno del suo contenitore
                     p.parentNode.appendChild(btn);
 
                     btn.addEventListener('click', function() {
