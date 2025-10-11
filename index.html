@@ -394,29 +394,28 @@
                     </div>
                 </div>
                 <div class="highlights-carousel-container">
-                    <div id="highlightsCarousel" class="carousel slide custom-carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/grad.jpeg" class="d-block w-100" alt="Graduation photo">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/tml.jpeg" class="d-block w-100" alt="Tomorrowland photo 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/tml2.jpeg" class="d-block w-100" alt="Tomorrowland photo 2">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
+    <div id="highlightsCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/grad.jpeg" class="d-block w-100" alt="Graduation photo">
             </div>
+            <div class="carousel-item">
+                <img src="images/tml.jpeg" class="d-block w-100" alt="Tomorrowland photo 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/tml2.jpeg" class="d-block w-100" alt="Tomorrowland photo 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
         </section>
         <section data-scroll-index="4" class="section work-section border-top-g">
             <div class="container">
@@ -498,12 +497,16 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/scrollIt.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/mail_send.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/scrollIt.min.js"></script>
+
+<!-- BOOTSTRAP BUNDLE PRIMA di custom.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- i tuoi script personalizzati DOPO bootstrap -->
+<script src="js/custom.js"></script>
+<script src="js/mail_send.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
