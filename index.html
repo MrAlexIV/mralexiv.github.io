@@ -417,60 +417,136 @@
     </div>
 </div>
         </section>
-        <section data-scroll-index="4" class="section work-section border-top-g">
-            <div class="container">
-                <div class="row justify-content-center section-heading">
-                    <div class="col-lg-6 text-center">
-                        <h6><span class="text-theme">Portfolio</span></h6>
-                        <h3>My latest projects</h3>
-                        <p>See my <a href="https://github.com/MrAlexIV">GitHub</a> for actual details on the following projects. This is also most likely not up to date like most personal websites.</p>
-                    </div>
-                </div>
-                  <div class="row g-4 justify-content-center">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="https://salvm.southengineering.it/" target="_blank" class="project-card">
-                            <img src="images/salvm.png" alt="SALVM">
-                            <div class="card-body">
-                                <h5 class="card-title">SALVM</h5>
-                            </div>
-                        </a>
-                    </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="https://github.com/MrAlexIV/SatelliteAttitudeControl" target="_blank" class="project-card">
-                            <img src="images/satellite.png" alt="Satellite Attitude Control">
-                            <div class="card-body">
-                                <h5 class="card-title">Satellite Attitude Control</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="https://github.com/MrAlexIV/SmartParking/tree/main" target="_blank" class="project-card">
-                            <img src="images/park.png" alt="Smart Parking IoT">
-                            <div class="card-body">
-                                <h5 class="card-title">Smart Parking IoT</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="https://github.com/MrAlexIV/eregister" target="_blank" class="project-card">
-                            <img src="images/stud.png" alt="Electronic Register">
-                            <div class="card-body">
-                                <h5 class="card-title">Electronic Register</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="https://github.com/MrAlexIV/pasm" target="_blank" class="project-card">
-                            <img src="images/pasm.PNG" alt="PASM Business Process Optimization">
-                            <div class="card-body">
-                                <h5 class="card-title">PASM: Business Process Optimization</h5>
-                            </div>
-                        </a>
-                    </div>
+       <section data-scroll-index="4" class="section work-section border-top-g">
+        <div class="container">
+            <div class="row justify-content-center section-heading">
+                <div class="col-lg-6 text-center">
+                    <h6><span class="text-theme">Portfolio</span></h6>
+                    <h3>My latest projects</h3>
+                    <p>See my <a href="https://github.com/MrAlexIV">GitHub</a> for actual details on the following projects. This is also most likely not up to date like most personal websites.</p>
                 </div>
             </div>
-        </section>
+
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                            <div class="project-card text-center p-3">
+                                <a href="https://salvm.southengineering.it/" target="_blank">
+                                    <img src="images/salvm.png" alt="SALVM" class="img-fluid mb-3">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">SALVM</h5>
+                                    <button class="btn btn-outline-light btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#desc-salvm" aria-expanded="false" aria-controls="desc-salvm">
+                                        Read Description
+                                    </button>
+                                    <div class="collapse mt-3" id="desc-salvm">
+                                        <div class="card card-body bg-transparent border-light text-start">
+                                            The SALVM (System for Assisted Localization and Viewing of Motorcyclists) project aims to enhance the safety of Vulnerable Road Users (VRUs) through a Cooperative Intelligent Transport System (C-ITS) platform. The system uses camera-equipped RoadSide Units (RSUs) to detect VRUs, while vehicles are equipped with On-Board Units (OBUs) to receive real-time alerts.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                             <div class="project-card text-center p-3">
+                                <a href="https://github.com/MrAlexIV/SatelliteAttitudeControl" target="_blank">
+                                    <img src="images/satellite.png" alt="Satellite Attitude Control" class="img-fluid mb-3">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Satellite Attitude Control</h5>
+                                    <button class="btn btn-outline-light btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#desc-satellite" aria-expanded="false" aria-controls="desc-satellite">
+                                        Read Description
+                                    </button>
+                                    <div class="collapse mt-3" id="desc-satellite">
+                                        <div class="card card-body bg-transparent border-light text-start">
+                                            This project involves the simulation and control of a satellite's attitude using advanced algorithms. Developed in MATLAB/Simulink, it explores PID and LQR control strategies to stabilize the satellite and orient it towards a desired target, analyzing performance under various simulated conditions.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                             <div class="project-card text-center p-3">
+                                <a href="https://github.com/MrAlexIV/SmartParking/tree/main" target="_blank">
+                                    <img src="images/park.png" alt="Smart Parking IoT" class="img-fluid mb-3">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Smart Parking IoT</h5>
+                                    <button class="btn btn-outline-light btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#desc-parking" aria-expanded="false" aria-controls="desc-parking">
+                                        Read Description
+                                    </button>
+                                    <div class="collapse mt-3" id="desc-parking">
+                                        <div class="card card-body bg-transparent border-light text-start">
+                                            An IoT project for intelligent parking management. It uses sensors, a cloud platform (ThingsBoard), and a mobile app to monitor and reserve parking spots in real-time. The system is designed to reduce traffic congestion and streamline the parking process for users.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                             <div class="project-card text-center p-3">
+                                <a href="https://github.com/MrAlexIV/eregister" target="_blank">
+                                    <img src="images/stud.png" alt="Electronic Register" class="img-fluid mb-3">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Electronic Register</h5>
+                                    <button class="btn btn-outline-light btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#desc-register" aria-expanded="false" aria-controls="desc-register">
+                                        Read Description
+                                    </button>
+                                    <div class="collapse mt-3" id="desc-register">
+                                        <div class="card card-body bg-transparent border-light text-start">
+                                            A web application for managing a school's electronic register. Developed with Java and Spring Boot for the backend, it handles student data, grades, and attendance, providing a robust and secure system for educational institutions.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                             <div class="project-card text-center p-3">
+                                <a href="https://github.com/MrAlexIV/pasm" target="_blank">
+                                    <img src="images/pasm.PNG" alt="PASM Business Process Optimization" class="img-fluid mb-3">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">PASM: Business Process Optimization</h5>
+                                    <button class="btn btn-outline-light btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#desc-pasm" aria-expanded="false" aria-controls="desc-pasm">
+                                        Read Description
+                                    </button>
+                                    <div class="collapse mt-3" id="desc-pasm">
+                                        <div class="card card-body bg-transparent border-light text-start">
+                                           This project focused on optimizing the business processes for PASM, a precision mechanics company. It involved analyzing workflows and implementing software solutions, including a Python-based management system, to improve efficiency and automate tasks.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+    </section>
         <section data-scroll-index="6" class="section testimonial-section border-top-g">
             <div class="container">
                 <div class="row justify-content-center section-heading">
